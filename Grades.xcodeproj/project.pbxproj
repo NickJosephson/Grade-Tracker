@@ -10,7 +10,7 @@
 		E17723F82376294B00000114 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17723F72376294B00000114 /* AppDelegate.swift */; };
 		E17723FB2376294B00000114 /* Grades.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E17723F92376294B00000114 /* Grades.xcdatamodeld */; };
 		E17723FD2376294B00000114 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17723FC2376294B00000114 /* SceneDelegate.swift */; };
-		E17723FF2376294B00000114 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17723FE2376294B00000114 /* Event.swift */; };
+		E17723FF2376294B00000114 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17723FE2376294B00000114 /* Course.swift */; };
 		E17724012376294B00000114 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17724002376294B00000114 /* ContentView.swift */; };
 		E17724032376294C00000114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17724022376294C00000114 /* Assets.xcassets */; };
 		E17724062376294C00000114 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17724052376294C00000114 /* Preview Assets.xcassets */; };
@@ -41,7 +41,7 @@
 		E17723F72376294B00000114 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E17723FA2376294B00000114 /* Grades.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Grades.xcdatamodel; sourceTree = "<group>"; };
 		E17723FC2376294B00000114 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E17723FE2376294B00000114 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		E17723FE2376294B00000114 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		E17724002376294B00000114 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E17724022376294C00000114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E17724052376294C00000114 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			children = (
 				E17723F72376294B00000114 /* AppDelegate.swift */,
 				E17723FC2376294B00000114 /* SceneDelegate.swift */,
-				E17723FE2376294B00000114 /* Event.swift */,
+				E17723FE2376294B00000114 /* Course.swift */,
 				E17724002376294B00000114 /* ContentView.swift */,
 				E17724022376294C00000114 /* Assets.xcassets */,
 				E17724072376294C00000114 /* LaunchScreen.storyboard */,
@@ -273,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E17723FF2376294B00000114 /* Event.swift in Sources */,
+				E17723FF2376294B00000114 /* Course.swift in Sources */,
 				E17724012376294B00000114 /* ContentView.swift in Sources */,
 				E17723F82376294B00000114 /* AppDelegate.swift in Sources */,
 				E17723FB2376294B00000114 /* Grades.xcdatamodeld in Sources */,

@@ -10,9 +10,10 @@ import SwiftUI
 import CoreData
 
 extension Course {
-    static func create(in managedObjectContext: NSManagedObjectContext){
+    static func create(in managedObjectContext: NSManagedObjectContext, title: String) {
         let newCourse = self.init(context: managedObjectContext)
         newCourse.timestamp = Date()
+        newCourse.title = title
         
         do {
             try  managedObjectContext.save()
