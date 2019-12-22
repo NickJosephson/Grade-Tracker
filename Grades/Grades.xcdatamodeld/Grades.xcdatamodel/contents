@@ -1,26 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Course" representedClassName="Course" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="max" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="min" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="timestamp" optional="YES" attributeType="Date"/>
         <attribute name="title" optional="YES" attributeType="String"/>
         <relationship name="categories" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="GradeCategory" inverseName="course" inverseEntity="GradeCategory"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
         <userInfo/>
     </entity>
     <entity name="Grade" representedClassName="Grade" syncable="YES" codeGenerationType="class">
+        <attribute name="hasAssessment" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="percentage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="title" optional="YES" attributeType="String"/>
         <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GradeCategory" inverseName="grades" inverseEntity="GradeCategory"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <entity name="GradeCategory" representedClassName="GradeCategory" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="title" optional="YES" attributeType="String"/>
         <attribute name="weight" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="categories" inverseEntity="Course"/>
         <relationship name="grades" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Grade" inverseName="category" inverseEntity="Grade"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="Course" positionX="261" positionY="189" width="125.9102783203125" height="88"/>
-        <element name="Grade" positionX="638.0747680664062" positionY="444.2114868164062" width="128" height="103"/>
-        <element name="GradeCategory" positionX="461.6213989257812" positionY="292.9870300292969" width="128" height="103"/>
+        <element name="Course" positionX="261" positionY="189" width="125.9102783203125" height="133"/>
+        <element name="Grade" positionX="638.0747680664062" positionY="444.2114868164062" width="128" height="133"/>
+        <element name="GradeCategory" positionX="461.6213989257812" positionY="292.9870300292969" width="128" height="133"/>
     </elements>
 </model>

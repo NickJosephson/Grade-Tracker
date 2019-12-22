@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E12F06A8237E85CE00D0F2B1 /* GradeCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F06A7237E85CE00D0F2B1 /* GradeCategoryView.swift */; };
+		E12F06AA237E863900D0F2B1 /* GradeRangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F06A9237E863900D0F2B1 /* GradeRangeView.swift */; };
+		E12F06AD237E87AD00D0F2B1 /* CoursesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F06AC237E87AD00D0F2B1 /* CoursesListView.swift */; };
+		E12F06AF237E880700D0F2B1 /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F06AE237E880700D0F2B1 /* CourseDetailView.swift */; };
+		E12F06B1237E99F000D0F2B1 /* GradeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F06B0237E99F000D0F2B1 /* GradeCategory.swift */; };
+		E12F06B3237E9A1E00D0F2B1 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12F06B2237E9A1E00D0F2B1 /* Grade.swift */; };
 		E17723F82376294B00000114 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17723F72376294B00000114 /* AppDelegate.swift */; };
 		E17723FB2376294B00000114 /* Grades.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E17723F92376294B00000114 /* Grades.xcdatamodeld */; };
 		E17723FD2376294B00000114 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17723FC2376294B00000114 /* SceneDelegate.swift */; };
@@ -37,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E12F06A7237E85CE00D0F2B1 /* GradeCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCategoryView.swift; sourceTree = "<group>"; };
+		E12F06A9237E863900D0F2B1 /* GradeRangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeRangeView.swift; sourceTree = "<group>"; };
+		E12F06AC237E87AD00D0F2B1 /* CoursesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesListView.swift; sourceTree = "<group>"; };
+		E12F06AE237E880700D0F2B1 /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
+		E12F06B0237E99F000D0F2B1 /* GradeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCategory.swift; sourceTree = "<group>"; };
+		E12F06B2237E9A1E00D0F2B1 /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
 		E17723F42376294B00000114 /* Grades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grades.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17723F72376294B00000114 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E17723FA2376294B00000114 /* Grades.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Grades.xcdatamodel; sourceTree = "<group>"; };
@@ -80,6 +92,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E12F06AB237E874A00D0F2B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E17724002376294B00000114 /* ContentView.swift */,
+				E12F06AC237E87AD00D0F2B1 /* CoursesListView.swift */,
+				E12F06AE237E880700D0F2B1 /* CourseDetailView.swift */,
+				E12F06A7237E85CE00D0F2B1 /* GradeCategoryView.swift */,
+				E12F06A9237E863900D0F2B1 /* GradeRangeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E17723EB2376294B00000114 = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +130,9 @@
 				E17723F72376294B00000114 /* AppDelegate.swift */,
 				E17723FC2376294B00000114 /* SceneDelegate.swift */,
 				E17723FE2376294B00000114 /* Course.swift */,
-				E17724002376294B00000114 /* ContentView.swift */,
+				E12F06B0237E99F000D0F2B1 /* GradeCategory.swift */,
+				E12F06B2237E9A1E00D0F2B1 /* Grade.swift */,
+				E12F06AB237E874A00D0F2B1 /* Views */,
 				E17724022376294C00000114 /* Assets.xcassets */,
 				E17724072376294C00000114 /* LaunchScreen.storyboard */,
 				E177240A2376294C00000114 /* Info.plist */,
@@ -273,11 +299,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12F06A8237E85CE00D0F2B1 /* GradeCategoryView.swift in Sources */,
+				E12F06AA237E863900D0F2B1 /* GradeRangeView.swift in Sources */,
 				E17723FF2376294B00000114 /* Course.swift in Sources */,
+				E12F06AD237E87AD00D0F2B1 /* CoursesListView.swift in Sources */,
+				E12F06AF237E880700D0F2B1 /* CourseDetailView.swift in Sources */,
 				E17724012376294B00000114 /* ContentView.swift in Sources */,
 				E17723F82376294B00000114 /* AppDelegate.swift in Sources */,
 				E17723FB2376294B00000114 /* Grades.xcdatamodeld in Sources */,
+				E12F06B3237E9A1E00D0F2B1 /* Grade.swift in Sources */,
 				E17723FD2376294B00000114 /* SceneDelegate.swift in Sources */,
+				E12F06B1237E99F000D0F2B1 /* GradeCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
